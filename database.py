@@ -6,5 +6,6 @@ mycursor = data.cursor()
 
 mycursor.execute("select * from student")
 
-for i in mycursor:
-	print(i)
+result = mycursor.fetchall()
+print(result)
+
